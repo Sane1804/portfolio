@@ -34,6 +34,11 @@ body {
     align-items: center;
 }
 
+#nickname {
+    font-size: 4rem;
+    letter-spacing: 1ch;
+}
+
 
 .section {
     display: flex;
@@ -69,18 +74,32 @@ body {
     width: 100px;
 }
 
-
 .tech-name {
     font-size: 1rem ;
-}
-
-#nickname {
-    font-size: 4rem;
-    letter-spacing: 1ch;
 }
 
 .section-name {
     font-size: 2rem;
     align-self: flex-start;
     border: 1px solid black
+}
+
+
+.projects-container {
+    padding: 5px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.project-card {
+    border: 1px solid black;
+    display: flex;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.project-img-container {
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
 }
