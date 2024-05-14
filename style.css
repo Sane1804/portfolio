@@ -11,16 +11,21 @@ html {
     margin: 0;
 }
 
+:root {
+    --main-background-color: #222831;
+}
+
 body {
     height: 300vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40px 1.3fr 0.8fr 1fr 1.2fr;
+    background-color: var(--main-background-color);
+    color: white;
 }
 
 
 .navbar {
-    border: 1px solid black;
     display: flex;
     justify-content: flex-end;
 }
@@ -28,7 +33,6 @@ body {
 .nav-item-list {
     width: 40%;
     list-style: none;
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,37 +45,39 @@ body {
 
 
 .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     padding: 4rem;
-    gap: 10px;
-    border: 1px solid black;
 }
 
 #welcome {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card-container {
-    border: 1px solid black;
+    flex:1;
     display: flex;
+    justify-content: center;
     padding: 5px;
     gap: 15px;
-    
 }
 
 .tech-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
-    text-align: center;
     padding: 20px;
+    max-width: 250px;
+    border-radius: 5px;
 }
 
 .tech-logo {
-    height: 100px;
     width: 100px;
+    flex: 1;
 }
 
 .tech-name {
@@ -81,13 +87,12 @@ body {
 .section-name {
     font-size: 2rem;
     align-self: flex-start;
-    border: 1px solid black
+    margin-bottom: 10px;
 }
 
 
 .projects-container {
     padding: 5px;
-    border: 1px solid black;
     width: 100%;
 }
 
@@ -96,6 +101,7 @@ body {
     display: flex;
     padding: 5px;
     margin: 10px 0;
+    border-radius: 6px;
 }
 
 .project-img-container {
