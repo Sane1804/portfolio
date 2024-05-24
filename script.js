@@ -4,9 +4,9 @@ const ARROW_UP = document.querySelector(".arrow-up");
 
 const changeOpacity = (strNumber) => {
     let number = Number(strNumber)
-    if (number > 490) {
+    if (number > 260) {
         ARROW_UP.style.opacity = 0;
-    } else if (number < 490 && number > 400){
+    } else {
         ARROW_UP.style.opacity = 1;
     }
 }

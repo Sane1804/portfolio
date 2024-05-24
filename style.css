@@ -83,17 +83,37 @@ body {
     align-items: center;
 }
 
+#welcome {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.cv-button {
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #394049;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 0;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.cv-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color:#394049
+}
+
+
+
 .container {
     flex:1;
     max-width: 980px;
     padding: 6px;
 }
 
-#welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .card-container {
     flex:1;
@@ -181,4 +201,5 @@ body {
     bottom: 20px;
     right: 15px;
     opacity: 0;
+    cursor:none;
 }
