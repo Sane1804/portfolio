@@ -43,9 +43,6 @@ body {
     align-items: center;
 }
 
-.nav-item-clicked {
-    background-color: #394049;
-}
 
 
 
@@ -56,8 +53,13 @@ body {
     padding: 5px;
 }
 
+.link:hover {
+    background-color:#394049 ;
+}
+
+
 .link-clicked {
-    background-color: #394049;
+    border-bottom: 2px solid white;
 }
 
 
@@ -172,4 +174,11 @@ body {
     height: 100px;
     width: 200px;
     border: 1px solid black;
+}
+
+.arrow-up {
+    position:fixed;
+    bottom: 20px;
+    right: 15px;
+    opacity: 0;
 }

@@ -1,16 +1,18 @@
-const NAVBAR_ITEMS = document.querySelectorAll(".link");
+const ABOUT_SECTION = document.querySelector("#about")
+const ARROW_UP = document.querySelector(".arrow-up");
 
-const resetNavItemColor = () => {
-    let navItems = NAVBAR_ITEMS;
-    navItems.forEach(item => item.classList.remove("link-clicked"))
+
+const changeOpacity = (strNumber) => {
+    let number = Number(strNumber)
+    if (number > 490) {
+        ARROW_UP.style.opacity = 0;
+    } else if (number < 490 && number > 400){
+        ARROW_UP.style.opacity = 1;
+    }
 }
 
-const handleClick = (e) => {
-    let item = e.target;
-    resetNavItemColor()
-    item.classList.add("link-clicked");
-}
-
-NAVBAR_ITEMS.forEach(item => item.addEventListener("click" , (e) => {
-    handleClick(e)
-}))
+window.addEventListener("scroll", () => {
+    const cordinates = ABOUT_SECTION.getBoundingClientRect();
+    let y = cordinates.y
+    changeOpacity(y.toFixed(0))
+})
