@@ -180,6 +180,7 @@ body {
 .projects-container {
     padding: 5px;
     width: 100%;
+    border: 2px solid white;
 }
 
 .project-card {
@@ -194,6 +195,24 @@ body {
     height: 100px;
     width: 200px;
     border: 1px solid black;
+}
+
+.text-projects-container {
+    flex: 1;
+    border: 1px solid white;
+}
+
+.links-project-container {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+.project-link {
+    width: 40px;
 }
 
 .arrow-up {
