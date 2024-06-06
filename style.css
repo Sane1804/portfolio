@@ -43,9 +43,6 @@ body {
     align-items: center;
 }
 
-
-
-
 .link {
     text-decoration: none;
     color: white;
@@ -62,36 +59,35 @@ body {
     border-bottom: 2px solid white;
 }
 
-
-
 .link-underline {
     text-decoration: underline;
     color: white;
 }
 
 #welcome {
+    max-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;
-    grid-template-areas: "name name name name name"
-                         "tech tech cv tool tool";
+    grid-template-areas: "name name"
+    "tech tool";
     border: 1px solid white;
 }
 
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 .name-container {
     grid-area: name;
     border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .name {
-    font-size: 4rem;
+    font-weight: 100;
+    font-size: 5em;
     letter-spacing: 0.5ch;
     font-family:Montserrat;
 }
@@ -99,6 +95,7 @@ body {
 .tech-container {
     grid-area: tech;
     border: 1px solid white;
+    padding: 10px;
 }
 
 .tool-container {
@@ -106,13 +103,12 @@ body {
     border: 1px solid white;
 }
 
-.welcome-containers {
+
+.section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 
 
 .container {
@@ -130,6 +126,7 @@ body {
     padding: 5px;
     margin-bottom: 20px;
     gap: 15px;
+    border: 1px solid white;
 }
 
 .tech-card {
@@ -138,8 +135,9 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
-    max-width: 250px;
+    padding: 10px;
+    max-width: 200px;
+    border: 1px solid white;
 }
 
 
@@ -151,7 +149,7 @@ body {
 .tech-logo {
     margin-top: auto;
     transition: transform .2s;
-    width: 150px;
+    width: 90px;
     flex: 1;
     cursor: pointer;
 }
