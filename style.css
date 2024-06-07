@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    height: 280vh;
+    height: 286vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40px 1fr 1fr 1fr;
@@ -68,7 +68,7 @@ body {
     max-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr minmax(50px, 90px);
+    grid-template-rows: 1fr minmax(50px, 110px);
     grid-template-areas: "name name"
     "tech tool";
 }
@@ -87,7 +87,7 @@ body {
 
 .name {
     font-weight: 100;
-    font-size: 4rem;
+    font-size: 4.5rem;
     letter-spacing: 0.5ch;
     font-family:Montserrat;
 }
@@ -110,13 +110,16 @@ body {
 
 .tech-container {
     grid-area: tech;
+}
+
+.skills-container {
     display: flex;
     justify-content: space-around;
     gap: 1.3rem;
     padding: 20px 40px;
 }
 
-.tech-card {
+.skill-card {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -126,23 +129,23 @@ body {
 }
 
 
-.tech-logo-container {
+.logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tech-logo {
+.logo {
     margin-top: auto;
     transition: transform .2s;
-    width: 90px;
+    width: 60px;
     flex: 1;
     cursor: pointer;
 }
 
 
-.tech-logo:hover {
+.logo:hover {
     transform: scale(1.1);
 }
 
@@ -153,7 +156,6 @@ body {
 
 .tool-container {
     grid-area: tool;
-    border: 1px solid white;
 }
 
 
