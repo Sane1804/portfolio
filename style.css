@@ -68,82 +68,52 @@ body {
     max-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr minmax(50px, 90px);
     grid-template-areas: "name name"
     "tech tool";
-    border: 1px solid white;
 }
 
 
 
 .name-container {
     grid-area: name;
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .name {
     font-weight: 100;
-    font-size: 5em;
+    font-size: 4rem;
     letter-spacing: 0.5ch;
     font-family:Montserrat;
 }
 
 .tech-container {
     grid-area: tech;
-    border: 1px solid white;
-    padding: 10px;
-}
-
-.tool-container {
-    grid-area: tool;
-    border: 1px solid white;
-}
-
-
-.section {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.container {
-    flex:1;
-    max-width: 980px;
-    padding: 6px;
-}
-
-
-.card-container {
-    flex:1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5px;
-    margin-bottom: 20px;
-    gap: 15px;
-    border: 1px solid white;
+    justify-content: space-around;
+    gap: 1.3rem;
+    padding: 20px 40px;
 }
 
 .tech-card {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    max-width: 200px;
-    border: 1px solid white;
 }
 
 
 .tech-logo-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech-logo {
@@ -164,11 +134,24 @@ body {
 }
 
 
-.tech-name {
-    margin-top: auto;
-    font-size: 1rem ;
+.tool-container {
+    grid-area: tool;
+    border: 1px solid white;
 }
 
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    flex:1;
+    max-width: 980px;
+    padding: 6px;
+}
 .section-name {
     font-size: 2rem;
     align-self: flex-start;
