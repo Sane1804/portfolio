@@ -67,10 +67,10 @@ body {
 #welcome {
     max-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr minmax(50px, 110px);
-    grid-template-areas: "name name"
-    "tech tool";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas: "name"
+    "skills";
 }
 
 
@@ -95,7 +95,7 @@ body {
 .cv-button {
     transition: transform .2s;
     border: 0;
-    padding: 6px;
+    padding: 8px 10px;
     border-radius: 7px;
     background-color: #394049;    
     color: white;
@@ -108,15 +108,12 @@ body {
     cursor: pointer;
 }
 
-.tech-container {
-    grid-area: tech;
-}
-
 .skills-container {
+    grid-area: skills;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1.3rem;
-    padding: 20px 40px;
+    gap: 1rem;
 }
 
 .skill-card {
@@ -154,11 +151,6 @@ body {
 }
 
 
-.tool-container {
-    grid-area: tool;
-}
-
-
 .section {
     display: flex;
     justify-content: center;
@@ -185,9 +177,29 @@ body {
 }
 
 .projects-container {
-    padding: 5px;
+    padding: 5px 10px;
     width: 100%;
-    border: 2px solid white;
+    max-height: 380px;
+    border: 1px solid black;
+    overflow-y: auto;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:#222831;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #394049;
+    width: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white;
 }
 
 .project-card {
@@ -202,24 +214,34 @@ body {
     height: 100px;
     width: 200px;
     border: 1px solid black;
+    border-radius: 6px;
 }
 
 .text-projects-container {
     flex: 1;
-    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.project-name {
+    font-size: 1rem;
+}
+
+.project-description {
+    font-size: 0.9rem;
 }
 
 .links-project-container {
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 5px;
 }
 
 
 
 .project-link {
-    width: 40px;
+    width: 30px;
+    cursor: pointer;
 }
 
 .arrow-up {
