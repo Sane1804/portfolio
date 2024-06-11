@@ -211,10 +211,18 @@ body {
 }
 
 .project-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100px;
     width: 200px;
     border: 1px solid black;
     border-radius: 6px;
+    
+}
+
+.project-img {
+    width: 50px;
 }
 
 .text-projects-container {
